@@ -1,3 +1,5 @@
 (sym_lib_table
   (lib (name MX_Alps_Hybrid)(type Legacy)(uri "${KIPRJMOD}/MX_Alps_Hybrid/Schematic Library/MX_Alps_Hybrid.lib")(options "")(descr ""))
+  (lib (name random-keyboard-parts)(type Legacy)(uri "C:/Users/Stubb/OneDrive/Documents/GitHub/bakeneko60tho/random-keyboard-parts.pretty/Schematic Library/random-keyboard-parts.lib")(options "")(descr ""))
+  (lib (name 2022-05-12_04-31-03)(type Legacy)(uri ${KIPRJMOD}/ul_ATMEGA32U4-MU/KiCAD/2022-05-12_04-31-03/2022-05-12_04-31-03.lib)(options "")(descr ""))
 )

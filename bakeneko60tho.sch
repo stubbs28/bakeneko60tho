@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:bakeneko60tho-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -106,35 +107,13 @@ U 1 1 627F8D7C
 P 7700 1700
 F 0 "SW1" H 7700 1985 50  0000 C CNN
 F 1 "SW_Push" H 7700 1894 50  0000 C CNN
-F 2 "" H 7700 1900 50  0001 C CNN
+F 2 "random-keyboard-parts:SKQG-1155865" H 7700 1900 50  0001 C CNN
 F 3 "~" H 7700 1900 50  0001 C CNN
 	1    7700 1700
 	1    0    0    -1  
 $EndComp
-Connection ~ 8600 5000
-Wire Wire Line
-	8600 5000 8700 5000
-Wire Wire Line
-	8250 5000 8600 5000
-Connection ~ 8700 1400
-Connection ~ 8600 1400
-Wire Wire Line
-	8700 1400 8800 1400
-Wire Wire Line
-	8600 1400 8700 1400
 Wire Wire Line
 	7450 2800 8100 2800
-$Comp
-L MCU_Microchip_ATmega:ATmega32U4-AU U1
-U 1 1 627D35F1
-P 8700 3200
-F 0 "U1" H 8700 1311 50  0000 C CNN
-F 1 "ATmega32U4-AU" H 8700 1220 50  0000 C CNN
-F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 8700 3200 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 8700 3200 50  0001 C CNN
-	1    8700 3200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7900 1700 8000 1700
 $Comp
@@ -2749,4 +2728,26 @@ Wire Wire Line
 	9300 4500 9550 4500
 Wire Wire Line
 	9300 4600 9550 4600
+Wire Wire Line
+	8600 1400 8700 1400
+Wire Wire Line
+	8250 5000 8600 5000
+$Comp
+L MCU_Microchip_ATmega:ATmega32U4-MU U?
+U 1 1 62ABC593
+P 8700 3200
+F 0 "U?" H 8700 1311 50  0000 C CNN
+F 1 "ATmega32U4-MU" H 8700 1220 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-44-1EP_7x7mm_P0.5mm_EP5.2x5.2mm" H 8700 3200 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 8700 3200 50  0001 C CNN
+	1    8700 3200
+	1    0    0    -1  
+$EndComp
+Connection ~ 8600 1400
+Wire Wire Line
+	8600 5000 8700 5000
+Connection ~ 8600 5000
+Wire Wire Line
+	8700 1400 8800 1400
+Connection ~ 8700 1400
 $EndSCHEMATC
