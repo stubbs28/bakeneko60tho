@@ -236,17 +236,6 @@ F 3 "" H 6800 5100 50  0001 C CNN
 	1    6800 5100
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR0113
-U 1 1 628948D3
-P 6900 5850
-F 0 "#PWR0113" H 6900 5600 50  0001 C CNN
-F 1 "GND" H 6905 5677 50  0000 C CNN
-F 2 "" H 6900 5850 50  0001 C CNN
-F 3 "" H 6900 5850 50  0001 C CNN
-	1    6900 5850
-	1    0    0    -1  
-$EndComp
 Text GLabel 800  1250 0    50   Input ~ 0
 ROW0
 Text GLabel 800  1950 0    50   Input ~ 0
@@ -2655,13 +2644,9 @@ ROW1
 Text GLabel 9550 3600 2    50   Input ~ 0
 ROW0
 Wire Wire Line
-	6900 5850 6600 5850
-Wire Wire Line
 	7500 5100 7300 5100
 Wire Wire Line
 	7000 5100 6800 5100
-Wire Wire Line
-	6800 5100 6600 5100
 Connection ~ 6800 5100
 Wire Wire Line
 	8600 1400 8700 1400
@@ -2731,56 +2716,38 @@ Wire Wire Line
 	9300 4500 9550 4500
 Wire Wire Line
 	9300 4600 9550 4600
-$Comp
-L Connector:Conn_01x01_Male J4
-U 1 1 62DF2DF2
-P 6400 5100
-F 0 "J4" H 6508 5281 50  0000 C CNN
-F 1 "vcc" H 6508 5190 50  0000 C CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical" H 6400 5100 50  0001 C CNN
-F 3 "~" H 6400 5100 50  0001 C CNN
-	1    6400 5100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x01_Male J1
-U 1 1 62DF4B11
-P 6400 5850
-F 0 "J1" H 6508 6031 50  0000 C CNN
-F 1 "GND" H 6508 5940 50  0000 C CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical" H 6400 5850 50  0001 C CNN
-F 3 "~" H 6400 5850 50  0001 C CNN
-	1    6400 5850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x01_Male J3
-U 1 1 62DF471A
-P 6400 5350
-F 0 "J3" H 6508 5531 50  0000 C CNN
-F 1 "D-" H 6508 5440 50  0000 C CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical" H 6400 5350 50  0001 C CNN
-F 3 "~" H 6400 5350 50  0001 C CNN
-	1    6400 5350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6600 5350 6800 5350
-Text GLabel 6800 5350 2    50   Input ~ 0
-D-
-$Comp
-L Connector:Conn_01x01_Male J2
-U 1 1 62DF4913
-P 6400 5600
-F 0 "J2" H 6508 5781 50  0000 C CNN
-F 1 "D+" H 6508 5690 50  0000 C CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical" H 6400 5600 50  0001 C CNN
-F 3 "~" H 6400 5600 50  0001 C CNN
-	1    6400 5600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6800 5600 6600 5600
-Text GLabel 6800 5600 2    50   Input ~ 0
+Text GLabel 6800 5300 2    50   Input ~ 0
 D+
+Wire Wire Line
+	6800 5300 6600 5300
+Text GLabel 6800 5200 2    50   Input ~ 0
+D-
+Wire Wire Line
+	6600 5200 6800 5200
+Wire Wire Line
+	6800 5100 6600 5100
+$Comp
+L Connector_Generic:Conn_01x04 J1
+U 1 1 63177917
+P 6400 5300
+F 0 "J1" H 6318 4875 50  0000 C CNN
+F 1 "Conn_01x04" H 6318 4966 50  0000 C CNN
+F 2 "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal" H 6400 5300 50  0001 C CNN
+F 3 "~" H 6400 5300 50  0001 C CNN
+	1    6400 5300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6900 5400 6600 5400
+$Comp
+L power:GND #PWR0113
+U 1 1 628948D3
+P 6900 5400
+F 0 "#PWR0113" H 6900 5150 50  0001 C CNN
+F 1 "GND" H 6905 5227 50  0000 C CNN
+F 2 "" H 6900 5400 50  0001 C CNN
+F 3 "" H 6900 5400 50  0001 C CNN
+	1    6900 5400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
