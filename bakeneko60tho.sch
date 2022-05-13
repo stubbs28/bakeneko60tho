@@ -1659,27 +1659,27 @@ Wire Wire Line
 Wire Wire Line
 	5000 850  5000 750 
 Connection ~ 4900 850 
-Text GLabel 9550 4500 2    50   Input ~ 0
-COL1
-Text GLabel 9550 4400 2    50   Input ~ 0
-COL2
-Text GLabel 9550 4300 2    50   Input ~ 0
-COL3
 Text GLabel 9550 4200 2    50   Input ~ 0
+COL1
+Text GLabel 9550 4300 2    50   Input ~ 0
+COL2
+Text GLabel 9550 4400 2    50   Input ~ 0
+COL3
+Text GLabel 9550 4500 2    50   Input ~ 0
 COL4
-Text GLabel 9550 4100 2    50   Input ~ 0
+Text GLabel 9550 4600 2    50   Input ~ 0
 COL5
-Text GLabel 9550 1700 2    50   Input ~ 0
+Text GLabel 9550 2000 2    50   Input ~ 0
 COL6
-Text GLabel 9550 1800 2    50   Input ~ 0
-COL7
 Text GLabel 9550 1900 2    50   Input ~ 0
+COL7
+Text GLabel 9550 1800 2    50   Input ~ 0
 COL8
 Text GLabel 9550 3000 2    50   Input ~ 0
 COL13
 Text GLabel 9550 3100 2    50   Input ~ 0
 COL12
-Text GLabel 9550 2000 2    50   Input ~ 0
+Text GLabel 9550 1700 2    50   Input ~ 0
 COL9
 Text GLabel 9550 2900 2    50   Input ~ 0
 COL14
@@ -2633,7 +2633,7 @@ F 3 "" H 10600 3800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10350 3800 10600 3800
-Text GLabel 9550 4600 2    50   Input ~ 0
+Text GLabel 9550 4100 2    50   Input ~ 0
 COL0
 Text GLabel 9550 2200 2    50   Input ~ 0
 ROW3

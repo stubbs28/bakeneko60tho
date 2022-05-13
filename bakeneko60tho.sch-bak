@@ -236,17 +236,6 @@ F 3 "" H 6800 5100 50  0001 C CNN
 	1    6800 5100
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR0113
-U 1 1 628948D3
-P 7500 5500
-F 0 "#PWR0113" H 7500 5250 50  0001 C CNN
-F 1 "GND" H 7505 5327 50  0000 C CNN
-F 2 "" H 7500 5500 50  0001 C CNN
-F 3 "" H 7500 5500 50  0001 C CNN
-	1    7500 5500
-	1    0    0    -1  
-$EndComp
 Text GLabel 800  1250 0    50   Input ~ 0
 ROW0
 Text GLabel 800  1950 0    50   Input ~ 0
@@ -1670,29 +1659,29 @@ Wire Wire Line
 Wire Wire Line
 	5000 850  5000 750 
 Connection ~ 4900 850 
-Text GLabel 9550 4500 2    50   Input ~ 0
-COL1
-Text GLabel 9550 4400 2    50   Input ~ 0
-COL2
-Text GLabel 9550 4300 2    50   Input ~ 0
-COL3
 Text GLabel 9550 4200 2    50   Input ~ 0
+COL1
+Text GLabel 9550 4300 2    50   Input ~ 0
+COL2
+Text GLabel 9550 4400 2    50   Input ~ 0
+COL3
+Text GLabel 9550 4500 2    50   Input ~ 0
 COL4
-Text GLabel 9550 4100 2    50   Input ~ 0
+Text GLabel 9550 4600 2    50   Input ~ 0
 COL5
-Text GLabel 9550 1700 2    50   Input ~ 0
+Text GLabel 9550 2000 2    50   Input ~ 0
 COL6
-Text GLabel 9550 1800 2    50   Input ~ 0
-COL7
 Text GLabel 9550 1900 2    50   Input ~ 0
+COL7
+Text GLabel 9550 1800 2    50   Input ~ 0
 COL8
 Text GLabel 9550 3000 2    50   Input ~ 0
 COL13
-Text GLabel 9550 3100 2    50   Input ~ 0
-COL12
-Text GLabel 9550 2000 2    50   Input ~ 0
-COL9
 Text GLabel 9550 2900 2    50   Input ~ 0
+COL12
+Text GLabel 9550 1700 2    50   Input ~ 0
+COL9
+Text GLabel 9550 3100 2    50   Input ~ 0
 COL14
 $Comp
 L MX_Alps_Hybrid:MX-NoLED MX58
@@ -2644,7 +2633,7 @@ F 3 "" H 10600 3800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10350 3800 10600 3800
-Text GLabel 9550 4600 2    50   Input ~ 0
+Text GLabel 9550 4100 2    50   Input ~ 0
 COL0
 Text GLabel 9550 2200 2    50   Input ~ 0
 ROW3
@@ -2727,27 +2716,38 @@ Wire Wire Line
 	9300 4500 9550 4500
 Wire Wire Line
 	9300 4600 9550 4600
-Text GLabel 6800 5200 2    50   Input ~ 0
-D-
 Text GLabel 6800 5300 2    50   Input ~ 0
 D+
+Wire Wire Line
+	6800 5300 6600 5300
+Text GLabel 6800 5200 2    50   Input ~ 0
+D-
+Wire Wire Line
+	6600 5200 6800 5200
+Wire Wire Line
+	6800 5100 6600 5100
 $Comp
-L random-keyboard-parts:Molex-0548190589 USB1
-U 1 1 6307FB21
-P 6000 5300
-F 0 "USB1" V 6537 5267 60  0000 C CNN
-F 1 "Molex-0548190589" V 6431 5267 60  0000 C CNN
-F 2 "random-keyboard-parts:JST-SR-4" H 6000 5300 60  0001 C CNN
-F 3 "" H 6000 5300 60  0001 C CNN
-	1    6000 5300
-	0    -1   -1   0   
+L Connector_Generic:Conn_01x04 J1
+U 1 1 63177917
+P 6400 5300
+F 0 "J1" H 6318 4875 50  0000 C CNN
+F 1 "Conn_01x04" H 6318 4966 50  0000 C CNN
+F 2 "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal" H 6400 5300 50  0001 C CNN
+F 3 "~" H 6400 5300 50  0001 C CNN
+	1    6400 5300
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	6300 5100 6800 5100
-Wire Wire Line
-	6300 5200 6800 5200
-Wire Wire Line
-	6300 5300 6800 5300
-Wire Wire Line
-	6300 5500 7500 5500
+	6900 5400 6600 5400
+$Comp
+L power:GND #PWR0113
+U 1 1 628948D3
+P 6900 5400
+F 0 "#PWR0113" H 6900 5150 50  0001 C CNN
+F 1 "GND" H 6905 5227 50  0000 C CNN
+F 2 "" H 6900 5400 50  0001 C CNN
+F 3 "" H 6900 5400 50  0001 C CNN
+	1    6900 5400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
