@@ -1,5 +1,5 @@
 (fp_lib_table
   (lib (name MX_Only)(type KiCad)(uri ${KIPRJMOD}/MX_Alps_Hybrid/MX_Only.pretty)(options "")(descr ""))
   (lib (name random-keyboard-parts)(type KiCad)(uri C:/Users/Stubb/OneDrive/Documents/GitHub/bakeneko60tho/random-keyboard-parts.pretty)(options "")(descr ""))
-  (lib (name footprints)(type KiCad)(uri ${KIPRJMOD}/ul_ATMEGA32U4-MU/KiCAD/2022-05-12_04-31-03/footprints.pretty)(options "")(descr ""))
+  (lib (name ATMEGA32U4-MU)(type KiCad)(uri ${KIPRJMOD}/ATMEGA32U4-MU)(options "")(descr ""))
 )
